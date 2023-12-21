@@ -197,6 +197,24 @@ Los Objetos se usan para guardar datos o ejecutar acciones que define la clase.
 
 
 
+----------------    Creando Clases y Propiedades    ---------------- 
+
+
+Vamos a Visual Studio a crear la Clase SuperHeroe que nos permitirá crear cualquier super héroe.
+
+Recordemos que los nombres de las clases debe ser en singular.
+
+La propiedad Id de la clase podría ser de tipo Guid también.
+
+
+
+
+
+
+
+
+
+
 
 
 

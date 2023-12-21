@@ -1,0 +1,60 @@
+" Curso de Programación Orientado a Objetos en C# "
+
+
+
+
+----------------    Fundamentos de Programación Orientada a Objetos con C#    ----------------
+
+
+Este es un curso base que nos servirá para poder tener los conocimientos para crear Aplicaciones en C# y en .NET.
+
+Revisemos los 5 Conceptos más importantes en este paradigma de la Programación que veremos en el curso.
+
+- " Clases y Objetos " : Éstos son los elementos base para poder programar en el paradigma de la programación orientado a objetos.
+
+Las Clases nos ayudan a definir "propiedades" y "comportamientos" como una plantilla que podemos reutilizar para poder crear nuestros Objetos.
+
+
+- " Encapsulamiento " : Relacionado a ocultar los valores reales o el detalle de los valores que poseen las propiedades o las características de nuestras clases.
+
+
+- " Herencia " : Es la forma en la que podemos reutilizar código en la POO (programación orientado a objetos), podemos pasar las propiedades y los métodos que tenemos en una clase a otra.
+
+
+- " Polimorfismo " : Posibilidad de definir diferentes comportamientos para el mismo método aceptando los mismos valores, parámetros y retornando el mismo tipo de datos pero definiendo diferentes tipos de comportamientos en diferentes clases.
+
+
+- " Abstracción " : Es un concepto que nos permite omitir los detalles de las implementaciones que estamos realizando en nuestra clase. De esta manera podemos crear elementos mucho más genéricos que nos permiten reutilizar nuestro código para múltiples escenarios.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

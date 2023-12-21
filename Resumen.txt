@@ -39,6 +39,138 @@ Las Clases nos ayudan a definir "propiedades" y "comportamientos" como una plant
 
 
 
+----------------    Prerrequisitos    ----------------
+
+- Conocimientos de C# y .NET.
+- .NET 7 o superior.
+- Visual Studio Code o Visual Studio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------    ¿Qué es la programación orientada a objetos (POO)?    ----------------
+
+
+¿Qué son los paradigmas de la Programación?.
+
+Son formas o estilos en los que podemos programar y estructurar nuestro código.
+
+La sintáxis del Lenguaje, cualquiera sea, está 100% relacionada al paradigma de la programación que estemos utilizando o que este Lenguaje utiliza mayormente.
+
+
+Existen muchos paradigmas de la programación dentro del mercado de software y entre todos los lenguajes que existen actualmente.
+
+
+Las librerías también podrían adoptar un lenguaje en particular e inclinarse en alguno de los paradigmas.
+
+
+
+Algunos de los paradigmas más importantes son los siguientes:
+
+- Programación Funcional.
+- Programación Estructurada.
+- Programación Reactiva.
+- Programación Orientada a Aspectos.
+- Programación Orientada a Objetos.
+
+
+Es importante mencionar que C# es un Lenguaje Multi-Paradigma.
+
+Esto significa que soporta múltiples estilos de programación.
+
+No significa que tengamos que trabajar con un paradigma u otro, de hecho, en C# es común mezclar múltiples paradigmas cuando estamos estructurando nuestro código.
+
+Sin embargo, la POO es uno de los paradigmas más importantes.
+De hecho las mismas librerías, frameworks y los mismos templates o plantillas que existen dentro de .NET para crear diferentes tipos de proyectos, se basa en la POO.
+
+En las últimas versiones de C# se ha potencializado mucho también el paradigma de la Programación Funcional, por ejemplo con ASP.NETCORE creando APIS.
+
+Por lo que no está de más aprende sobre el paradigma de la Programación Funcional ya que posee mucha relevancia e importancia en C# y .NET.
+
+
+CONCEPTO DE POO : Forma parte de la lista de las formas de programar, que vimos anteriormente, para estructurar nuestro código.
+
+La cualidad de la POO es la de buscar extraer todos esos objetos que nos rodean a nuestro alrrededor en la vida real y poder materializarlos de alguna manera en el código, describirlos e implementarlos y de esta manera poder realizar esta abstracción entre la realidad y el código que estamos creando.
+
+Los 2 componentes más importantes que veremos en este curso son las Clases y los Objetos.
+
+Las Clases son las plantillas o estructuras que vamos a reutilizar para poder crear los Objetos.
+
+
+La POO nos ayuda a reutilizar código.
+
+
+
+
+La POO...
+
+- Es un Paradigma de la Programación.
+
+- Su objetivo es extraer elementos de la realidad a los algoritmos en nuestro código.
+
+- Está basado en Clases y Objetos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -155,6 +155,48 @@ Vamos a crear nuestra primera Clase y nuestro primer Objeto.
 
 
 
+----------------    Concepto de Clases y Objetos    ---------------- 
+
+
+Concepto de Clase :
+
+- Elemento principal en POO.
+
+- Se basa en propiedades que representan las características del Objeto y métodos que definen el comportamiento.
+
+- Se pueden definir como la plantilla base para crear los Objetos.
+
+
+
+
+Las Clases tienen propiedades (características), y métodos (son funciones pero dentro dentro de las clases, éstas definen el comportamiento de la clase, es decir, define lo que la Clase pueda realizar)
+
+
+
+
+Los Objetos son instancias de las Clases.
+Son instancias ya que los Objetos quedan haciendo siempre referencia a la Clase a partir de la que se crearon.
+
+El Objeto es la particularidad de la Clase, es decir, toma todas las propiedades, los métodos y todo lo que se configuró en la Clase, pero los valores pueden alterarse y ser particulares para cada Objeto.
+
+Entonces, utilizamos a la Clase como un molde, como una plantilla y el Objeto es aquel que cambia los valores de esos contenidos de la Clase.
+
+
+Los Objetos se usan para guardar datos o ejecutar acciones que define la clase.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

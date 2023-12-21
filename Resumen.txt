@@ -133,6 +133,24 @@ La POO...
 
 
 
+----------------    Creando tu primera Clase y Objeto    ----------------  
+
+
+Abrimos Visual Studio y creamos un nuevo proyecto de consola (Console App).
+
+Utilizamos .NET 7.0 que es la última versión al momento en que se tomó este curso.
+
+Vamos a crear nuestra primera Clase y nuestro primer Objeto.
+
+
+
+
+
+
+
+
+
+
 
 
 

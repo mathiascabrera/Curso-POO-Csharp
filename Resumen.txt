@@ -219,6 +219,52 @@ La propiedad Id de la clase podría ser de tipo Guid también.
 
 
 
+----------------    Creando Clases Complejas    ----------------
+
+
+Vamos para nuestro IDE.
+
+Tenemos la propiedad de SuperPoderes, en donde tenemos una lista de strings. Pero para estos Super Poderes podríamos tener una descripción de lo que realiza ese superpoder y también asignarle un nivel para determinar qué tan importante es el superpoder.
+
+Sumado a esto también tener la posibilidad de reutilizar estos superpoderes, ya que por ejemplo muchos superhéroes pueden volar, pueden hacerse invisibles, etcétera.
+
+
+Para lo cual, frente a este escenario, podríamos crear una Clase para poder crear Objetos de tipo "SuperPoder", permitiéndonos tener mayor información y posibilitándonos a reutilizar código.
+
+
+Entonces creamos una nueva clase llamada "SuperPoder" y podríamos asignar las siguientes propiedades: Nombre, Descripción y Nivel de qué tan útil es el poder.
+
+En el caso del Nivel podría ser un int por ejemplo de 0 a 5, en donde el 5 podría ser el poder más útil y el 0 el más simple.
+
+No obstante, podríamos utilizar una estructura más compleja, la enumeración.
+
+Las Enumeraciones (ENUM) nos permiten crear una lista de valores y forzar al Desarrollador que esté utilizando la Clase a utilizar cualquiera de estos valores, pero no otros.
+
+En VS podemos apreciar su implementación.
+
+Una vez creada la clase "SuperPoder", procedemos a crear los Objetos de "SuperPoder" y luego reutilizar estos SuperPoderes en los SuperHeroes que necesitemos.
+
+Luego, en vez de tener una lista de Strings de SuperPoderes en la clase "SuperHeroe", vamos a tener una lista del tipo de "SuperPoder".
+
+La "List<T>" se conoce como el tipo genérico. Es una Lista que recibe cualquier tipo de datos ya sea primitivo o creado por el Desarrollador.
+
+Entonces, antes de agregar los SuperPoderes a nuestros SuperHeroes, debemos crear primeramente una Lista de SuperPoderes, y finalmente esta Lista agregar a nuestros SuperHeroes.
+
+
+
+Ahora podemos crear mútiples poderes que luego las podemos reutilizar.
+
+Los SuperPoderes las debemos crear al principio del código para que queden de manera general, y luego ir asignandole a la Lista de poderes de cada superheroe esos poderes.
+
+De esta manera construímos diferentes objetos mucho más complejos pero mucho mejor estructurados y sobre todo reutilizando los SuperPoderes.
+
+
+
+
+
+
+
+
 
 
 

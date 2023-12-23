@@ -356,5 +356,75 @@ De esta manera vemos que cada uno de estos tipos tienen su particularidad y su f
 
 
 
-Vayamos a Visual Studio y realicemos una comparativa y entendamos porqué es tan importante utilizar los tipos r
-Registros y los tipos Records en ciertos escenarios.
+Vayamos a Visual Studio y realicemos una comparativa y entendamos porqué es tan importante utilizar los tipos Registros y los tipos Records en ciertos escenarios.
+
+
+Hemos realizado la siguiente prueba en VS :
+
+Console.WriteLine("Comparación de dos Objetos de Clase: "+Convert.ToString(superman == superman2));
+
+Console.WriteLine("Comparación de dos Objetos de tipo Record: "+Convert.ToString(superHeroeRecord == superHeroeRecord2));
+
+A pesar de tener los mismos valores, en la COMPARACIÓN de Objetos de CLASES el resultado fue FALSE, mientras que en la COMPARACIÓN de Objetos RECORDS lo que devolvió fue TRUE.
+
+Cuando estamos trabajando con Microservicios y tenemos que recibir múltiples mensajes de otros servicios y queremos comparalos para saber que son iguales los tipo Records son extremadamente útiles ya que manualmente no tengo que revisar propiedad por propiedad si los objetos son iguales o no para poder compararlos, simplemente utilizamos el tipo Record.
+
+
+También podemos crear un Tipo Struct.
+
+
+
+Información adicional:
+
+RECORD En C#, un "record" es un tipo de referencia inmutable introducido en C# 9.0 que se utiliza para modelar datos simples y valores inmutables. Los "records" son especialmente útiles cuando tienes un conjunto de datos que no cambia después de su creación y deseas garantizar que no se pueda modificar. Algunas de las ventajas y casos de uso comunes de los "records" incluyen:
+
+Inmutabilidad: Los "records" son inmutables de forma predeterminada, lo que significa que sus valores no pueden cambiar después de que se hayan creado. Esto garantiza que los datos permanezcan consistentes y predecibles.
+
+Facilidad de Igualdad: Los "records" facilitan la comparación de igualdad de objetos basándose en sus valores en lugar de sus referencias. Esto es útil al realizar comparaciones de igualdad en lugar de referencia.
+
+Sintaxis Concisa: Los "records" tienen una sintaxis concisa para definir propiedades y métodos. Puedes definir propiedades de solo lectura de manera abreviada.
+
+Desestructuración: Los "records" admiten la desestructuración, lo que significa que puedes descomponer un objeto "record" en sus componentes individuales.
+
+Patrones de Coincidencia: Los "records" funcionan bien con patrones de coincidencia, lo que facilita la escritura de código que responde a diferentes combinaciones de valores de objetos "record".
+
+Usos Comunes: Los "records" son ideales para modelar tipos de datos simples como puntos, vectores, coordenadas geográficas, datos de sensores y otros valores inmutables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

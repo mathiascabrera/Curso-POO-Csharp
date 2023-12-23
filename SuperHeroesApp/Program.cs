@@ -38,8 +38,16 @@ superman2.IdentidadSecreta = "Clark Kent";
 superman2.Ciudad = "Metropolis";
 superman2.PuedeVolar = true;
 
-Console.WriteLine(superman == superman2);//Esto va a devolver un booleano.
+Console.WriteLine("Comparación de dos Objetos de Clase: "+Convert.ToString(superman == superman2));//Esto va a devolver un booleano.
 //Al ejecutar el código, esto nos retorna False, a pesar de que poseen los mismos datos, no son iguales, y es que son dos posiciones de memoria distintos, son dos instancias diferentes 
+
+
+
+//SuperHeroeRecord superHeroeRecord = new (1, "Superman", "Clark Kent");//Esta es otra manera de declararlo.
+SuperHeroeRecord superHeroeRecord = new SuperHeroeRecord(1,"Superman","Clark Kent");
+SuperHeroeRecord superHeroeRecord2 = new SuperHeroeRecord(1, "Superman", "Clark Kent");
+//Tenemos dos registros que estamos creando por separado, sin embargo los valores son exactamente iguales.
+Console.WriteLine("Comparación de dos Objetos de tipo Record: "+Convert.ToString(superHeroeRecord == superHeroeRecord2));//Esto va a devolver un booleano.
 
 
 
@@ -118,3 +126,8 @@ enum NivelPoder
     NivelDos,
     NivelTres
 }
+
+//Creamos un Record
+//No podemos tener dos tipos con el mismo nombre
+
+public record SuperHeroeRecord(int Id, string Nombre, string IdentidadSecreta);

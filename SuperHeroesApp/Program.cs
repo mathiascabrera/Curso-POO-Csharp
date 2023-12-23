@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using SuperHeroesApp.Models;
 
 var poderVolar = new SuperPoder();
 poderVolar.Nombre = "Volar";
@@ -77,49 +78,6 @@ poderesFlash.Add(poderViajeTiempo);
 flash.SuperPoderes = poderesFlash;
 
 
-//Las Clases deben nombrarse en singular
-class SuperHeroe
-{
-    //public Guid Id;
-    public int Id;
-    public string Nombre;
-    public string IdentidadSecreta;
-    public string Ciudad;
-    public List<SuperPoder> SuperPoderes;
-    public bool PuedeVolar;
-
-    //Constructor
-    public SuperHeroe()
-    {
-        Id = 1;//Valor por defecto
-        SuperPoderes = new List<SuperPoder>();//Inicializamos la Lista de SuperPoderes
-        PuedeVolar = false;//Valor por defecto
-    }
-    //Método
-    public string UsarSuperPoderes()
-    {
-        StringBuilder sb= new StringBuilder();//StringBuilder nos ayuda a concatenar strings
-        foreach(var item in SuperPoderes)
-        {
-            sb.AppendLine($"{Nombre} está usando el super poder {item.Nombre}!!");//AppendLine va concatenando una línea completa de texto y luego nos va a devolver ese Objeto con toda esa información
-        }
-        return sb.ToString();
-    }
-}
-
-class SuperPoder
-{
-    public string Nombre;
-    public string Descripcion;
-    public NivelPoder Nivel;
-
-    //Constructor
-    public SuperPoder()
-    {
-        Nivel = NivelPoder.NivelUno;//Nivel de poder por defecto
-    }
-}
-
 enum NivelPoder
 {
     NivelUno,
@@ -129,5 +87,4 @@ enum NivelPoder
 
 //Creamos un Record
 //No podemos tener dos tipos con el mismo nombre
-
 public record SuperHeroeRecord(int Id, string Nombre, string IdentidadSecreta);

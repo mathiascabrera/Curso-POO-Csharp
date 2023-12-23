@@ -403,28 +403,50 @@ Usos Comunes: Los "records" son ideales para modelar tipos de datos simples como
 
 
 
+----------------    Modificadores de acceso    ----------------
+
+"Quiénes tienen accesos a las clases, propiedades y métodos".
+
+Lista de Modificadores de Acceso más utilizados en C#, aunque existen otros más :
+
+- public
+
+- protected
+
+- internal
+
+- private
+
+- file
+
+
+"public" y "private" son los más importantes, en cuanto a porcentajes de uso.
+
+Con el private evitamos que cualquiera que esté fuera del contexto de nuestra Clase pueda utilizar ese método o esa propiedad. El acceso está limitado al tipo contenedor.
+
+Con public sucede lo contrario, se expone la propiedad o el método que esté dentro de la clase, para que sea utilizado por cualquiera que esté creando Objetos con nuestra Clase. El Acceso no está restringido.
+
+Con protected el acceso está limitado a la clase contenedora o a los tipos derivados de la clase contenedora. No así fuera de la clase.
+
+Con internal el acceso esta limitado al ensamblado actual.
+
+Con protected internal (se combinan ambas), el acceso está limitado al ensamblado actual o a los tipos derivados de la clase contenedora. Posee ambas limitaciones.
+
+Con private protected (combinación de ambas), el acceso está limitado a la clase contenedora o a los tipos derivados de la clase contenedora que hay en el ensamblado actual.
+
+
+Vayamos a Visual Studio y pongamos en práctica los modificadores de acceso.
+
+
+Vamos ordenar nuestro código. Todas las Clases deben poseer un archivo por lo que crearemos un archivo para cada clase que tengamos en nuestro proyecto.
+
+Por defecto las clases se crean con el modificador de acceso Internal.
+
+A las clases las podemos definir como Internal o Public, luego ya podemos jugar con el "namespace" para determinar en dónde la queremos utilizar.
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+En la próxima clase aprenderemos acerca del concepto de Encapsulamiento.
+Haremos uso de los modificadores de acceso para ocultar y mostrar propiedades que tengamos dentro de la clase.

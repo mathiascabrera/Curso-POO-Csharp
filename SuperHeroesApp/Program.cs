@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System.Text;
 
 var poderVolar = new SuperPoder();
 poderVolar.Nombre = "Volar";
@@ -8,8 +7,8 @@ poderVolar.Nivel = NivelPoder.NivelDos;
 
 
 var superFuerza = new SuperPoder();
-poderVolar.Nombre = "Super fuerza";
-poderVolar.Nivel = NivelPoder.NivelTres;
+superFuerza.Nombre = "Super fuerza";
+superFuerza.Nivel = NivelPoder.NivelTres;
 
 
 var poderMoverseVelLuz = new SuperPoder();
@@ -37,6 +36,10 @@ poderesSuperman.Add(superFuerza);
 
 superman.SuperPoderes = poderesSuperman;
 
+//Invocación del método
+string resultSuperPoderes = superman.UsarSuperPoderes();
+
+Console.WriteLine(resultSuperPoderes);
 
 
 var flash = new SuperHeroe();
@@ -70,6 +73,16 @@ class SuperHeroe
         Id = 1;//Valor por defecto
         SuperPoderes = new List<SuperPoder>();//Inicializamos la Lista de SuperPoderes
         PuedeVolar = false;//Valor por defecto
+    }
+    //Método
+    public string UsarSuperPoderes()
+    {
+        StringBuilder sb= new StringBuilder();//StringBuilder nos ayuda a concatenar strings
+        foreach(var item in SuperPoderes)
+        {
+            sb.AppendLine($"{Nombre} está usando el super poder {item.Nombre}!!");//AppendLine va concatenando una línea completa de texto y luego nos va a devolver ese Objeto con toda esa información
+        }
+        return sb.ToString();
     }
 }
 

@@ -295,6 +295,23 @@ Vayamos a Visual Studio para crear nuestro Constructor.
 
 
 
+----------------    Métodos dentro de una Clase    ----------------
+
+Crearemos Métodos (funciones que realizan una acción y que se encuentran dentro de las Clases), que nos ayuden a definir los comportamientos de nuestros Objetos.
+
+¡Vayamos a Visual Studio a realizarlo!.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

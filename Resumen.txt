@@ -314,6 +314,54 @@ Crearemos Métodos (funciones que realizan una acción y que se encuentran dentr
 
 
 
+----------------    Tipos Registro y Estructura    ----------------
+
+Estos tipos tienen mucha relevancia y particularidades que nos permiten utilizarlos en escenarios muy puntuales.
+
+
+TABLAS COMPARATIVA entre los tipos Clase, Estructura y Registro.
+
+CLASE							ESTRUCTURA				REGISTRO
+Referencia						Valor					Valor o referencia
+Grandes						Pequeñas				Pequeñas
+Valores y Comportamientos			Enfocada a valores		Enfocada a valores inmutables
+
+
+Podemos observar las diferencias entre los Tipos Clase, Estructura y Registro.
+
+Las Clases ya las conocemos, una de las particularidades es que la forma en la que se crean o se comparan los elementos dentro del código es a través de Referencias. Esto significa que cada vez que creemos un objeto con esa clase se va a partar una posición de memoria para almacenar los datos de ese Objeto y se le va a asignar un identificador a esa posición de memoria, a ese bloque de memoria que se apartó para ese Objeto en particular.
+
+Esto significa que si creamos otro objeto con las mismas características, es decir, exactamente con los mismos valores, de todas maneras va a ser un Objeto diferente al primer Objeto que creamos, ya que cada uno de estos va a tener una referencia diferente.
+
+
+En este aspecto podemos mencionar que las Estructuras y los Registros funcionan diferentes ya que éstos se enfocan más en Valores, o realizar comparativas mediante valores.
+
+Si tuviéramos dos Objetos con los mismos datos, en el caso de las Estructuras y Registros, van a ser exactamente los mismos Objetos.
+
+
+
+Las Clases se pueden utilizar en cualquier nivel de complejidad, cuando tengamos componentes pequeños medianos o grandes podemos emplear Clases.
+
+Sin embargo, las Estructuras y los Registros también pueden crecer pero no son buenos para los medianos y grandes componentes. Generalmente se tienen que crear objetos muy pequeños que se enfocan en valores como hemos visto anteriormente.
+
+Entonces si tenemos un objeto que posee 5 propiedades queremos almacenar datos ahí y luego compararlos a nivel de valor entonces las estructuras y los registros son una gran opción.
+
+
+También podemos resaltar que las Clases son enfocadas en Valores y Comportamientos, es decir, cuando tenemos que crear datos pero también tenemos que crear muchos métodos o funciones dentro de la clase para poder manipular esos datos dentro de la Clase.
+
+No obstante, las Estructuras son enfocadas en Valores y los Registros enfocados en Valores Inmutables (que no cambian en el tiempo).
+
+
+
+
+Vayamos a Visual Studio y realicemos una comparativa.
+
+
+
+
+
+
+
 
 
 

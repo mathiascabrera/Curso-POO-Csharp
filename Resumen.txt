@@ -271,6 +271,25 @@ De esta manera construímos diferentes objetos mucho más complejos pero mucho m
 
 
 
+----------------    Constructor y datos iniciales en una clase    ----------------
+
+El Constructor nos ayuda a inicializar los valores de un objeto que son creados a partir de una Clase.
+Es una función que nos ayuda a inicializar los valores o especificar datos por defecto al momento de crear nuestros Objetos. 
+
+La forma de crear los Constructor varían según el Lenguaje. No obstante, para C#, no retorna ningún valor y su nombre debe ser exactamente el mismo nombre de la Clase.
+
+Con el Constructor podemos inicializar todas las variables y también ejecutar rutinas por defecto que necesitemos para cada uno de los Objetos que estemos creando.
+
+Vayamos a Visual Studio para crear nuestro Constructor.
+
+
+
+
+
+
+
+
+
 
 
 

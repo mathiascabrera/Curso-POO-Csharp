@@ -63,6 +63,14 @@ class SuperHeroe
     public string Ciudad;
     public List<SuperPoder> SuperPoderes;
     public bool PuedeVolar;
+
+    //Constructor
+    public SuperHeroe()
+    {
+        Id = 1;//Valor por defecto
+        SuperPoderes = new List<SuperPoder>();//Inicializamos la Lista de SuperPoderes
+        PuedeVolar = false;//Valor por defecto
+    }
 }
 
 class SuperPoder
@@ -70,6 +78,12 @@ class SuperPoder
     public string Nombre;
     public string Descripcion;
     public NivelPoder Nivel;
+
+    //Constructor
+    public SuperPoder()
+    {
+        Nivel = NivelPoder.NivelUno;//Nivel de poder por defecto
+    }
 }
 
 enum NivelPoder

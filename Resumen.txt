@@ -349,52 +349,12 @@ Entonces si tenemos un objeto que posee 5 propiedades queremos almacenar datos a
 
 También podemos resaltar que las Clases son enfocadas en Valores y Comportamientos, es decir, cuando tenemos que crear datos pero también tenemos que crear muchos métodos o funciones dentro de la clase para poder manipular esos datos dentro de la Clase.
 
-No obstante, las Estructuras son enfocadas en Valores y los Registros enfocados en Valores Inmutables (que no cambian en el tiempo).
+No obstante, las Estructuras son enfocadas en Valores y los Registros enfocados en Valores Inmutables (que no cambian en el tiempo, vamos a instanciarlos a crearlos a asignarles un valor y este valor no va a cambiar durante el tiempo).
+
+
+De esta manera vemos que cada uno de estos tipos tienen su particularidad y su forma de utilizarlo.
 
 
 
-
-Vayamos a Visual Studio y realicemos una comparativa.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Vayamos a Visual Studio y realicemos una comparativa y entendamos porqué es tan importante utilizar los tipos r
+Registros y los tipos Records en ciertos escenarios.

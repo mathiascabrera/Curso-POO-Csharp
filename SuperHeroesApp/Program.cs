@@ -30,7 +30,20 @@ superman.IdentidadSecreta = "Clark Kent";
 superman.Ciudad = "Metropolis";
 superman.PuedeVolar = true;
 
-List<SuperPoder> poderesSuperman = new List<SuperPoder>();
+//Creamos otro Objeto Superman identico al anterior
+var superman2 = new SuperHeroe();
+superman2.Id = 1;
+superman2.Nombre = "SuperMan";
+superman2.IdentidadSecreta = "Clark Kent";
+superman2.Ciudad = "Metropolis";
+superman2.PuedeVolar = true;
+
+Console.WriteLine(superman == superman2);//Esto va a devolver un booleano.
+//Al ejecutar el código, esto nos retorna False, a pesar de que poseen los mismos datos, no son iguales, y es que son dos posiciones de memoria distintos, son dos instancias diferentes 
+
+
+
+/***List<SuperPoder> poderesSuperman = new List<SuperPoder>();
 poderesSuperman.Add(poderVolar);
 poderesSuperman.Add(superFuerza);
 
@@ -39,7 +52,7 @@ superman.SuperPoderes = poderesSuperman;
 //Invocación del método
 string resultSuperPoderes = superman.UsarSuperPoderes();
 
-Console.WriteLine(resultSuperPoderes);
+Console.WriteLine(resultSuperPoderes);***/
 
 
 var flash = new SuperHeroe();

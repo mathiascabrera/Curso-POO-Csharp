@@ -654,3 +654,49 @@ Vamos al código.
 
 Diferencias entre polimorfismo y sobrecarga:
 Esto puede parecer un poco confuso pero en definitiva el Polimorfismo consiste en redefinir un método de una clase padre en una clase hija. Mientras que la sobrecarga es definir un nuevo método igual que otro viejo, pero cambiando el tipo o la cantidad de parámetros.
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------    ¿Qué son las Interfaces?    ----------------
+
+- Es un contrato para garantizar la estructura de una clase, de tal manera que esta misma estructura la podamos utilizar en diferentes partes de nuestro código.
+Allí podemos crear propiedades, métodos, definir qué es lo que retornan estos métodos, pero no implementamos los métodos.
+
+- Permite elementos abstractos e implementaciones por defecto.
+
+- Ayudan a descoplar el código. Es decir, evitar que las partes de nuestro código, componentes, librerías no dependan una de la otra, sino que dependan de componentes abstractos
+
+- C# soporta implementaciones de múltiples interfaces.
+
+
+Con el uso de las Interfaces podemos extender fácilmente nuestro código.
+
+
+Las Interfaces están altamente relacionadas con los Principios SOLID (Interfaces Segregation Principle).
+
+
+CARACTERÍSTICAS GENERALES DE LAS INTERFACES:
+
+- Normalmente se declaran con la letra I al inicio del nombre.
+
+- Se utilizan en casi todos los patrones de diseños.
+
+- Podemos implementar generics para utilizar la misma Interfaz en diferentes escenarios. Ejemplo : IList<T>
+
+
+
+Las diferencias principales entre las interfaces y las clases son:
+
+Las interfaces no pueden tener instancias. Una interfaz solo puede ser implementada por un tipo de datos.
+Las interfaces solo pueden definir métodos, propiedades y eventos. Las clases pueden definir datos de instancia, métodos, propiedades y eventos.
+Las interfaces se utilizan para especificar el comportamiento. Las clases se utilizan para definir tipos de datos.

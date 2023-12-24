@@ -13,8 +13,8 @@ namespace SuperHeroesApp.Models
 
         public abstract string SalvarElMundo();
 
-        //El siguiente método, al no ser abstracto, las clases que implementen esta clase abstracta, no las tienen que implementar porque ya esta implementada, podrían utilizarla directamente.
-        public string SalvarLaTierra()
+        //El siguiente método ya está implementado, pero con virtual hacemos que las clases que implementen esta clase abstracta, pueden realizar una implementación diferente
+        public virtual string SalvarLaTierra()
         {
             return $"{Nombre} ha salvado la Tierra";
         }

@@ -633,3 +633,24 @@ En las Clases Abstractas también podemos emplear propiedades y métodos con com
 ¿Qué diferencia hay entre una Clase Abstracta y una Interfaz, y cuándo conviene usar una o la otra?.
 
 Al ser una clase, solo puede heredar de una y nada mas, con las interfaces puedes implementar varias e ir incrementando la lógica de acuerdo a los requerimientos del cliente. Una clase abstracta puede tener métodos implementados, una interfaz antes no podía hacerlo pero desde la versión C# 9. ya podemos hacerlo utilizando la nueva funcionalidad de Métodos por defecto en interfaces. Lo ideal es utilizar la mayor parte del tiempo Interfaces tanto para estructurar nuestro código en general como para también aplicar patrones de diseño.
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------    Polimorfismo    ----------------
+
+¿Qué sucede si ya tenemos un método implementado en la Clase Padre pero queremos que se comporte de manera diferente en la Sub-Clase?.
+
+Vamos al código.
+
+Diferencias entre polimorfismo y sobrecarga:
+Esto puede parecer un poco confuso pero en definitiva el Polimorfismo consiste en redefinir un método de una clase padre en una clase hija. Mientras que la sobrecarga es definir un nuevo método igual que otro viejo, pero cambiando el tipo o la cantidad de parámetros.

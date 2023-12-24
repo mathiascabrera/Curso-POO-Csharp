@@ -10,7 +10,7 @@ namespace SuperHeroesApp.Models
     {
         private string _Nombre;
         public int Id;
-        public override string Nombre
+        public override  string Nombre
         { get
             {
                 return _Nombre;
@@ -54,6 +54,11 @@ namespace SuperHeroesApp.Models
         public override string SalvarElMundo()
         {
             return $"{NombreIdentidadSecreta} ha salvado el mundo.";
+        }
+        public override string SalvarLaTierra()
+        {
+            //return base.SalvarLaTierra();
+            return $"{NombreIdentidadSecreta} ha salvado la Tierra.";
         }
     }
 }

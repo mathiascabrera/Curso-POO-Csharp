@@ -8,9 +8,18 @@ namespace SuperHeroesApp.Models
 {
     class SuperHeroe
     {
-        //public Guid Id;
+        private string _Nombre;
         public int Id;
-        public string Nombre;
+        public string Nombre
+        { get
+            {
+                return _Nombre;
+            }
+            set
+            {
+                _Nombre = value.Trim();//El método trim elimina los espacios del principio y del final de la cadena.
+            }
+        }
         public string IdentidadSecreta;
         public string Ciudad;
         public List<SuperPoder> SuperPoderes;

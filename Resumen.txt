@@ -450,3 +450,88 @@ A las clases las podemos definir como Internal o Public, luego ya podemos jugar 
 
 En la próxima clase aprenderemos acerca del concepto de Encapsulamiento.
 Haremos uso de los modificadores de acceso para ocultar y mostrar propiedades que tengamos dentro de la clase.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------    Encapsulamiento    ----------------
+
+Vamos para visual studio para comprender este concepto.
+
+
+
+Supongamos que :
+
+superman.Nombre = "    SuperMan   ";//El cliente agrega mal la información.
+
+Se recibe un string con espacios, algo que es muy común, al ejecutar el código esta información se va a mostrar con esos espacios.
+
+
+Lo que vamos a realizar es encapsular la propiedad de Nombre y vamos a eliminar todos esos caracteres para modificar el valor recibido.
+Esta es una de las cualidades o de los casos en los que podemos utilizar el Encapsulamiento.
+
+Debemos tener dos propiedades de Nombre, una publica y otra privada.
+
+
+
+De esta manera encapsulamos la propiedad "Nombre" en la clase SuperHeroe para almacenar un nombre diferente en la propiedad privada _Nombre al momento en el que se realiza la asignación.
+
+public string Nombre
+{ get
+    {
+        return _Nombre;
+    }
+    set
+    {
+        _Nombre = value.Trim();//El método trim elimina los espacios del principio y del final de la cadena.
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

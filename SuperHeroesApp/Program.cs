@@ -72,6 +72,12 @@ Console.WriteLine(resultWolverinePoderes);
 string accionAntiHeroe = wolverine.RealizarAccionDeAntiHeroe("Atacar la Policía");
 Console.WriteLine(accionAntiHeroe);
 
+string resultSalvarMundo = wolverine.SalvarElMundo();
+Console.WriteLine(resultSalvarMundo);
+
+//Hacemos uso del método implementado en la clase abstracta.
+string resultSalvaTierra = wolverine.SalvarLaTierra();
+Console.WriteLine(resultSalvaTierra);
 
 
 

@@ -559,6 +559,35 @@ Gran ejemplo en la clase con los get; y set;
 
 
 
+----------------    Herencia    ----------------
+
+Nos remitimos al concepto de las clases, recordemos que las clases son los componentes bases para la POO.
+
+La herencia permite que una Clase herede atributos y métodos de otra clase. es una forma de reutilizar el código para así, establecer relaciones entre las clases.
+
+Al tener Propiedades y Métodos en una Clase, éstas van a pasar a la Clase Hija, que está heredando sus características.
+
+Al aplicar Herencia, estamos reutilizando código.
+
+Sintáxis en C# para aplicar Herencia:
+
+public class ClaseHija : ClasePadre{}
+
+
+En C# solo podemos heredar de una sola Clase.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

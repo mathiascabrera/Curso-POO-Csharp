@@ -588,25 +588,14 @@ En C# solo podemos heredar de una sola Clase.
 
 
 
+----------------    Usando Herencia en C#    ----------------
 
+Los Antihéroes también son Superhéroes, tienen súper poderes, identidad secreta.
 
+La particularidad de ellos es que pueden cometer crímenes o realizar acciones que estén fuera de la ley siempre y cuando con esto puedan cumplir su misión generando la paz en la Tierra. Esta es la diferencia respecto a los Superhéroes .
 
+Los Superhéroes, no obstante, realizan todo acorde a la ley para lograr sus objetivos.
 
+Lo que vamos a hacer es crear una nueva clase "Antihéroe" que herede de Superhéroe, para poder reutilizar todo lo que ya tengamos de Superheroe, pero agregando esos comportamientos nuevos a los Antihéroes.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Vamos para Visual Studio y apliquemos esto.

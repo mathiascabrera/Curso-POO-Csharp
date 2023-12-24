@@ -23,6 +23,11 @@ poderViajeTiempo.Nombre = "Viajar en el tiempo";
 poderViajeTiempo.Nivel = NivelPoder.NivelTres;
 
 
+var regeneracion = new SuperPoder();
+regeneracion.Nombre = "Regeneración";
+regeneracion.Nivel = NivelPoder.NivelTres;
+
+
 
 var superman = new SuperHeroe();
 superman.Id = 1;
@@ -43,6 +48,31 @@ superman.SuperPoderes = poderesSuperman;
 string resultSuperPoderes = superman.UsarSuperPoderes();
 
 Console.WriteLine(resultSuperPoderes);
+
+
+
+
+var wolverine = new AntiHeroe();
+wolverine.Id = 5;
+wolverine.Nombre = "Wolverine";
+wolverine.IdentidadSecreta = "Logan";
+wolverine.PuedeVolar = false;
+
+List<SuperPoder> poderesWolverine = new List<SuperPoder>();
+poderesWolverine.Add(regeneracion);
+poderesWolverine.Add(superFuerza);
+
+wolverine.SuperPoderes = poderesWolverine;
+
+//Invocación del método
+string resultWolverinePoderes = wolverine.UsarSuperPoderes();
+
+Console.WriteLine(resultWolverinePoderes);
+
+string accionAntiHeroe = wolverine.RealizarAccionDeAntiHeroe("Atacar la Policía");
+Console.WriteLine(accionAntiHeroe);
+
+
 
 
 var flash = new SuperHeroe();

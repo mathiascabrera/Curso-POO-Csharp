@@ -276,7 +276,7 @@ De esta manera construímos diferentes objetos mucho más complejos pero mucho m
 El Constructor nos ayuda a inicializar los valores de un objeto que son creados a partir de una Clase.
 Es una función que nos ayuda a inicializar los valores o especificar datos por defecto al momento de crear nuestros Objetos. 
 
-La forma de crear los Constructor varían según el Lenguaje. No obstante, para C#, no retorna ningún valor y su nombre debe ser exactamente el mismo nombre de la Clase.
+La forma de crear los Constructores varían según el Lenguaje. No obstante, para C#, no retorna ningún valor y su nombre debe ser exactamente el mismo nombre de la Clase.
 
 Con el Constructor podemos inicializar todas las variables y también ejecutar rutinas por defecto que necesitemos para cada uno de los Objetos que estemos creando.
 
@@ -319,7 +319,7 @@ Crearemos Métodos (funciones que realizan una acción y que se encuentran dentr
 Estos tipos tienen mucha relevancia y particularidades que nos permiten utilizarlos en escenarios muy puntuales.
 
 
-TABLAS COMPARATIVA entre los tipos Clase, Estructura y Registro.
+TABLA COMPARATIVA entre los tipos Clase, Estructura y Registro.
 
 CLASE							ESTRUCTURA				REGISTRO
 Referencia						Valor					Valor o referencia
@@ -329,7 +329,7 @@ Valores y Comportamientos			Enfocada a valores		Enfocada a valores inmutables
 
 Podemos observar las diferencias entre los Tipos Clase, Estructura y Registro.
 
-Las Clases ya las conocemos, una de las particularidades es que la forma en la que se crean o se comparan los elementos dentro del código es a través de Referencias. Esto significa que cada vez que creemos un objeto con esa clase se va a partar una posición de memoria para almacenar los datos de ese Objeto y se le va a asignar un identificador a esa posición de memoria, a ese bloque de memoria que se apartó para ese Objeto en particular.
+Las Clases ya las conocemos, una de las particularidades es que la forma en la que se crean o se comparan los elementos dentro del código es a través de Referencias. Esto significa que cada vez que creemos un objeto con esa clase se va a apartar una posición de memoria para almacenar los datos de ese Objeto y se le va a asignar un identificador a esa posición de memoria, a ese bloque de memoria que se apartó para ese Objeto en particular.
 
 Esto significa que si creamos otro objeto con las mismas características, es decir, exactamente con los mismos valores, de todas maneras va a ser un Objeto diferente al primer Objeto que creamos, ya que cada uno de estos va a tener una referencia diferente.
 
@@ -344,10 +344,10 @@ Las Clases se pueden utilizar en cualquier nivel de complejidad, cuando tengamos
 
 Sin embargo, las Estructuras y los Registros también pueden crecer pero no son buenos para los medianos y grandes componentes. Generalmente se tienen que crear objetos muy pequeños que se enfocan en valores como hemos visto anteriormente.
 
-Entonces si tenemos un objeto que posee 5 propiedades queremos almacenar datos ahí y luego compararlos a nivel de valor entonces las estructuras y los registros son una gran opción.
+Entonces, si tenemos un objeto que posee 5 propiedades, queremos almacenar datos y luego compararlos a nivel de valor, entonces las estructuras y los registros son una gran opción.
 
 
-También podemos resaltar que las Clases son enfocadas en Valores y Comportamientos, es decir, cuando tenemos que crear datos pero también tenemos que crear muchos métodos o funciones dentro de la clase para poder manipular esos datos dentro de la Clase.
+También podemos resaltar que las Clases son enfocadas en Valores y Comportamientos, es decir, cuando tenemos que crear datos pero también tenemos que crear muchos métodos o funciones dentro de la clase, para poder manipular esos datos dentro de la Clase.
 
 No obstante, las Estructuras son enfocadas en Valores y los Registros enfocados en Valores Inmutables (que no cambian en el tiempo, vamos a instanciarlos a crearlos a asignarles un valor y este valor no va a cambiar durante el tiempo).
 
@@ -356,7 +356,7 @@ De esta manera vemos que cada uno de estos tipos tienen su particularidad y su f
 
 
 
-Vayamos a Visual Studio y realicemos una comparativa y entendamos porqué es tan importante utilizar los tipos Registros y los tipos Records en ciertos escenarios.
+Vayamos a Visual Studio y realicemos una comparativa y entendamos porqué es tan importante utilizar los tipos "Registros" y los tipos "Records" en ciertos escenarios.
 
 
 Hemos realizado la siguiente prueba en VS :
@@ -367,7 +367,7 @@ Console.WriteLine("Comparación de dos Objetos de tipo Record: "+Convert.ToStrin
 
 A pesar de tener los mismos valores, en la COMPARACIÓN de Objetos de CLASES el resultado fue FALSE, mientras que en la COMPARACIÓN de Objetos RECORDS lo que devolvió fue TRUE.
 
-Cuando estamos trabajando con Microservicios y tenemos que recibir múltiples mensajes de otros servicios y queremos comparalos para saber que son iguales los tipo Records son extremadamente útiles ya que manualmente no tengo que revisar propiedad por propiedad si los objetos son iguales o no para poder compararlos, simplemente utilizamos el tipo Record.
+Cuando estamos trabajando con Microservicios y tenemos que recibir múltiples mensajes de otros servicios y queremos compararlos para saber que son iguales, los tipo Records son extremadamente útiles ya que manualmente no tengo que revisar propiedad por propiedad si los objetos son iguales o no para poder compararlos, simplemente utilizamos el tipo Record.
 
 
 También podemos crear un Tipo Struct.
@@ -405,7 +405,7 @@ Usos Comunes: Los "records" son ideales para modelar tipos de datos simples como
 
 ----------------    Modificadores de acceso    ----------------
 
-"Quiénes tienen accesos a las clases, propiedades y métodos".
+"¿Quiénes tienen accesos a las clases, propiedades y métodos?".
 
 Lista de Modificadores de Acceso más utilizados en C#, aunque existen otros más :
 
@@ -438,9 +438,9 @@ Con private protected (combinación de ambas), el acceso está limitado a la cla
 Vayamos a Visual Studio y pongamos en práctica los modificadores de acceso.
 
 
-Vamos ordenar nuestro código. Todas las Clases deben poseer un archivo por lo que crearemos un archivo para cada clase que tengamos en nuestro proyecto.
+Vamos a ordenar nuestro código. Todas las Clases deben poseer un archivo. Por lo que crearemos un archivo para cada clase que tengamos en nuestro proyecto.
 
-Por defecto las clases se crean con el modificador de acceso Internal.
+Por defecto, las clases se crean con el modificador de acceso Internal.
 
 A las clases las podemos definir como Internal o Public, luego ya podemos jugar con el "namespace" para determinar en dónde la queremos utilizar.
 
@@ -475,11 +475,15 @@ En el encapsulamiento, los atributos de un objeto se declaran como privados, lo 
 
 Para permitir que otros objetos interactúen con estos atributos, se proporcionan métodos públicos, también conocidos como métodos de acceso o getters y setters, que permiten obtener y establecer los valores de los atributos de manera controlada.
 
+
 Los beneficios del encapsulamiento son:
 
 Control de acceso: Se puede especificar quién tiene acceso a los datos y quién no. Esto ayuda a prevenir modificaciones no deseadas o inconsistentes en los datos.
+
 Ocultamiento de detalles internos: Los detalles de implementación de una clase se mantienen ocultos, lo que facilita el cambio de la implementación sin afectar a los objetos que la utilizan.
+
 Facilita la mantenibilidad: Al tener una interfaz pública bien definida, es más fácil identificar y corregir problemas en el código, ya que se sabe dónde se realizan las interacciones con el objeto.
+
 En C# el encapsulamiento se logra utilizando modificadores de acceso como "private", "public" y "protected" para controlar el acceso a los atributos y métodos de una clase.
 
 
@@ -535,16 +539,15 @@ public string NombreIdentidadSecreta
 Esta nueva propiedad la vamos a utilizar en nuestro método UsarSuperPoderes().
 
 
-Este es otro tipo de encapsulamiento, lo que estamos haciendo es reutilizar las clases que ya tienen la clase, las transformamos, creamos una nueva propiedad que encapsula un comportamiento en particular, en este el comportamiento es pegar el nombre con la identidad secreta.
+Este es otro tipo de encapsulamiento, lo que estamos haciendo es reutilizar las clases que ya tienen la clase, las transformamos, creamos una nueva propiedad que encapsula un comportamiento en particular, en este, el comportamiento es pegar el nombre con la identidad secreta.
 
 El encapsulamiento se puede utilizar bajo estos escenarios en los que se desea realizar una transformación o manipulación de los valores de las propiedades o queremos crear una nueva propiedad en la que se encapsule un comportamiento en particular.
 
 
 Microsoft Define "Encapsulación" como:
 
-ocultar el estado interno y la funcionalidad de un objeto y permitir solo el acceso a través de un conjunto público de funciones.
+Ocultar el estado interno y la funcionalidad de un objeto y permitir solo el acceso a través de un conjunto público de funciones.
 
-Gran ejemplo en la clase con los get; y set;
 
 
 
@@ -563,7 +566,7 @@ Gran ejemplo en la clase con los get; y set;
 
 Nos remitimos al concepto de las clases, recordemos que las clases son los componentes bases para la POO.
 
-La herencia permite que una Clase herede atributos y métodos de otra clase. es una forma de reutilizar el código para así, establecer relaciones entre las clases.
+La herencia permite que una Clase herede atributos y métodos de otra clase. Es una forma de reutilizar el código para así establecer relaciones entre las clases.
 
 Al tener Propiedades y Métodos en una Clase, éstas van a pasar a la Clase Hija, que está heredando sus características.
 
@@ -655,6 +658,11 @@ Vamos al código.
 Diferencias entre polimorfismo y sobrecarga:
 Esto puede parecer un poco confuso pero en definitiva el Polimorfismo consiste en redefinir un método de una clase padre en una clase hija. Mientras que la sobrecarga es definir un nuevo método igual que otro viejo, pero cambiando el tipo o la cantidad de parámetros.
 
+
+
+Para hacer polimorfismo, usamos la palabra reservada "virtual" en lugar de "abstract".
+La diferencia es que ahora es opcional si hacemos la implementación en la clase hija o no.
+En la clase hija podemos usar lo mismo que usa el método del padre usando "base" y agregarle más cosas o podemos definir una implementación completamente diferente.
 
 
 
@@ -782,6 +790,48 @@ i.M(); prints "IA.M"
 
 
 
+
+
+
+
+
+
+
+----------------    Extras    ----------------
+
+DIFERENCIA ENTRE ARRAY y LIST Tanto los arrays como las listas (List<T>) en C# se utilizan para almacenar colecciones de elementos, pero tienen diferencias clave en términos de su flexibilidad, funcionalidad y rendimiento. Aquí hay algunas de las diferencias más importantes:
+
+Tamaño Fijo vs. Dinámico:
+
+Array: Los arrays tienen un tamaño fijo que se establece en el momento de su creación. No pueden cambiar de tamaño una vez que se han inicializado. Si necesitas agregar o quitar elementos, debes crear un nuevo array con el tamaño adecuado y copiar los elementos existentes si es necesario.
+
+List: Las listas son dinámicas y pueden cambiar de tamaño automáticamente. Puedes agregar, insertar, eliminar y modificar elementos fácilmente sin preocuparte por el tamaño subyacente.
+
+Eficiencia de Memoria:
+
+Array: Los arrays pueden ser más eficientes en términos de memoria en comparación con las listas, ya que no tienen la sobrecarga de almacenar información de capacidad y pueden ser más compactos.
+
+List: Las listas tienen una mayor sobrecarga de memoria debido a la información de capacidad interna, lo que significa que pueden consumir más memoria que los arrays si se reservan más espacio del necesario.
+
+Flexibilidad:
+
+Array: Los arrays son rígidos en tamaño y tipo. Debes conocer el tamaño exacto y el tipo de datos que contendrá el array antes de crearlo.
+
+List: Las listas son más flexibles y pueden contener elementos de cualquier tipo. Puedes agregar y quitar elementos dinámicamente, lo que las hace más versátiles.
+
+Funcionalidad:
+
+Array: Los arrays ofrecen funcionalidad limitada en comparación con las listas. No tienen métodos incorporados para agregar, eliminar o buscar elementos, lo que hace que el código sea más verboso.
+
+List: Las listas proporcionan una amplia gama de métodos útiles para agregar, eliminar, buscar y manipular elementos de manera eficiente, lo que facilita la administración de colecciones.
+
+Sintaxis y Usabilidad:
+
+Array: La sintaxis para trabajar con arrays puede ser menos intuitiva y requerir más código para realizar tareas comunes, como agregar elementos.
+
+List: Las listas tienen una sintaxis más amigable y su uso suele ser más sencillo y legible.
+
+En general, si necesitas una colección con un tamaño fijo y conocido de antemano, y no planeas agregar o quitar elementos con frecuencia, los arrays pueden ser más eficientes en términos de memoria. Sin embargo, si necesitas una colección dinámica que admita operaciones de inserción y eliminación de elementos de manera eficiente, las listas son una elección más práctica y versátil en la mayoría de los casos.
 
 
 

@@ -1,0 +1,156 @@
+1 - ¿C# permite la implementación de solo una interfaz?.
+
+C# permite la implementación de varias interfaces.
+
+
+
+2 - Verdadero / Falso : ¿Los modificadores de acceso permiten definir las propiedades y métodos que tiene la clase?.
+
+Falso.
+
+
+
+3 - ¿Cuál es la Keyword o directiva para crear una clase en C#?.
+
+La directiva para crear una clase es "new".
+
+
+
+4 - ¿Cuál de las siguientes es una forma de hacer Polimorfismo?.
+
+A. Propiedades.
+B. Herencia.
+C. Sobre-escritura. (Opción Correcta).
+D. Métodos.
+
+
+
+5 - ¿Cuál es el operador utilizado en C# para aplicar Herencia?.
+
+El operador utilizado en C# para aplicar Herencia son los dos puntos ":".
+
+
+
+6 - ¿Cuáles son los conceptos base de la programación orientado a objetos?.
+
+Los conceptos base de la POO son las Clases y los Objetos.
+
+
+
+7 - Verdadero/Falso. Una Clase como una plantilla para crear objetos.
+
+Verdadero.
+
+
+
+8 - Verdadero/Falso. La importancia en los tipos registros radica en la igualdad de valores para comparar.
+
+Verdadero.
+
+
+
+9 - ¿Cuál es la mejor palabra para definir una Interfaz?.
+
+La mejor palabra para definir una Interfaz es "Contrato".
+
+
+
+10 - ¿Qué debemos tener en cuenta al crear una propiedad?.
+
+Al momento de crear una propiedad debemos de tener en cuenta el Nivel de Acceso, el Tipo y el Nombre.
+
+
+
+11 - ¿Qué definen los métodos dentro de una Clase?.
+
+Los métodos, dentro de una Clase, definen comportamientos.
+
+
+
+12 - ¿En C# es posible heredar de múltiples Clases?.
+
+En C# solo podemos heredar de una sola Clase.
+
+
+
+13 - Verdadero/Falso. En C# una Clase puede usarse como tipo de propiedad en otra Clase.
+
+Verdadero.
+
+
+
+14 - ¿Qué nombre lleva el constructor de una Clase?.
+
+El Constructor de una Clase debe llevar el nombre de la misma Clase.
+
+
+
+15 - ¿Cuál es el objetivo principal de la POO?.
+
+El objetivo principal de la POO es abstraer elementos reales a los algoritmos usando el concepto de clases y objetos.
+
+
+
+16 - ¿Cuáles son las directivas o keywords que debemos usar para implementar el encapsulamiento?.
+
+Las directivas que debemos utilizar para implementar el Encapsulamiento son: get y set.
+
+
+
+17 - Verdadero/Falso. La abstracción permite definir una característica para los objetos sin definir la implementación.
+
+Verdadero.
+
+
+
+18 - ¿Cuál es el carácter que se utiliza para asignarle un valor a la propiedad de un Objeto?.
+
+El carácter que se utiliza para asignarle un valor a la propiedad de un Objeto es mediante el igual "=".
+
+
+
+19 - ¿Cuál es la keyword o directiva para crear un Objeto en C#?.
+
+La directiva para crear un Objeto en C# es el "new".
+
+
+
+20 - ¿Cuál es la directiva para crear una Interface?.
+
+La directiva para crear una Interface es "interface".
+
+
+
+21 - Verdadero/Falso. El nivel de Access Protected está limitado a la clase contenedora o a los tipos derivados de la clase contenedora.
+
+Verdadero.
+
+
+
+22 - ¿Cómo podemos inicializar las propiedades de un objeto durante su creación?.
+
+Podemos utilizar el Constructor para inicializar las propiedades de un objeto durante su creación.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

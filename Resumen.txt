@@ -700,3 +700,19 @@ Las diferencias principales entre las interfaces y las clases son:
 Las interfaces no pueden tener instancias. Una interfaz solo puede ser implementada por un tipo de datos.
 Las interfaces solo pueden definir métodos, propiedades y eventos. Las clases pueden definir datos de instancia, métodos, propiedades y eventos.
 Las interfaces se utilizan para especificar el comportamiento. Las clases se utilizan para definir tipos de datos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------    Usando Interfaces    ----------------
+
+Vamos para nuestro código.

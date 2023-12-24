@@ -1,5 +1,8 @@
 ﻿using System.Text;
+using SuperHeroesApp;
 using SuperHeroesApp.Models;
+
+var imprimirInfo = new ImprimirInfo();
 
 var poderVolar = new SuperPoder();
 poderVolar.Nombre = "Volar";
@@ -78,6 +81,9 @@ Console.WriteLine(resultSalvarMundo);
 //Hacemos uso del método implementado en la clase abstracta.
 string resultSalvaTierra = wolverine.SalvarLaTierra();
 Console.WriteLine(resultSalvaTierra);
+
+//Prueba uso Interface
+imprimirInfo.ImprimirSuperHeroe(wolverine);
 
 
 

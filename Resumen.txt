@@ -716,3 +716,77 @@ Las interfaces se utilizan para especificar el comportamiento. Las clases se uti
 ----------------    Usando Interfaces    ----------------
 
 Vamos para nuestro código.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------    Interfaces vs Clases Abstractas    ----------------
+
+Clases Abstractas:
+
+- Solo permite una herencia.
+Esto limita el crecimiento de nuestro código.
+
+- Permite tener implementaciones.
+No solo vamos a tener propiedades y métodos abstractos, sino también implementaciones.
+
+- Recomendada para reutilizar código y lógica.
+
+- Menos usada.
+
+
+
+Interface:
+
+- Permite múltiples implementaciones.
+
+- No es posible implementar (se puede a partir desde C# 8).
+A esta mejoría que presenta la versión 8 de C# se le llama Default Interface Methods.
+
+- Recomendada para implementar Patrones de Diseño y la Inyección de Dependencias.
+
+- Altamente utilizado.
+
+
+
+
+
+DEFAULT INTERFACE METHODS - C# 8
+
+interface IA
+{
+	void M() {WriteLine("IA.M");}
+}
+
+
+
+class C:IA{...}
+
+IA = new C();
+
+i.M(); prints "IA.M"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using SuperHeroesApp;
+using SuperHeroesApp.Interface;
 using SuperHeroesApp.Models;
 
 var imprimirInfo = new ImprimirInfo();
@@ -85,6 +86,7 @@ Console.WriteLine(resultSalvaTierra);
 //Prueba uso Interface
 imprimirInfo.ImprimirSuperHeroe(wolverine);
 
+Console.WriteLine($"Resultado de aplicar el método en la interface: {((ISuperHeroe)wolverine).GetSuperHeroe()}");
 
 
 var flash = new SuperHeroe();

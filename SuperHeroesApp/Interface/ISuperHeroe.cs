@@ -11,5 +11,14 @@ namespace SuperHeroesApp.Interface
         int Id { get; set; }
         string Nombre { get; set; }
         string IdentidadSecreta { get; set; }
+
+        string GetSuperHeroe()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Id: {Id}");
+            sb.AppendLine($"Nombre: {Nombre}");
+            sb.AppendLine($"Identidad secreta: {IdentidadSecreta}");
+            return sb.ToString();
+        }
     }
 }

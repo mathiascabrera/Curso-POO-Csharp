@@ -466,6 +466,25 @@ Haremos uso de los modificadores de acceso para ocultar y mostrar propiedades qu
 
 ----------------    Encapsulamiento    ----------------
 
+Encapsulamiento:
+Se refiere a la idea de ocultar los detalles internos de un objeto y proporcionar una interfaz pública bien definida para interactuar con él.
+
+El encapsulamiento permite controlar el acceso a los atributos y métodos de un objeto, lo que ayuda a mantener la integridad de los datos y facilita la gestión y el mantenimiento del código.
+
+En el encapsulamiento, los atributos de un objeto se declaran como privados, lo que significa que solo pueden accederse y modificarse desde dentro de la propia clase a la que pertenece el objeto.
+
+Para permitir que otros objetos interactúen con estos atributos, se proporcionan métodos públicos, también conocidos como métodos de acceso o getters y setters, que permiten obtener y establecer los valores de los atributos de manera controlada.
+
+Los beneficios del encapsulamiento son:
+
+Control de acceso: Se puede especificar quién tiene acceso a los datos y quién no. Esto ayuda a prevenir modificaciones no deseadas o inconsistentes en los datos.
+Ocultamiento de detalles internos: Los detalles de implementación de una clase se mantienen ocultos, lo que facilita el cambio de la implementación sin afectar a los objetos que la utilizan.
+Facilita la mantenibilidad: Al tener una interfaz pública bien definida, es más fácil identificar y corregir problemas en el código, ya que se sabe dónde se realizan las interacciones con el objeto.
+En C# el encapsulamiento se logra utilizando modificadores de acceso como "private", "public" y "protected" para controlar el acceso a los atributos y métodos de una clase.
+
+
+
+
 Vamos para visual studio para comprender este concepto.
 
 
@@ -499,6 +518,33 @@ public string Nombre
 
 
 
+Ahora vamos a realizar otro tipo de encapsulamiento.
+
+Crearemos una propiedad que sea de solo lectura y tenga un get.
+
+public string NombreIdentidadSecreta
+{
+    get
+    {
+        return $"{_Nombre} ({IdentidadSecreta})";
+    }
+}
+
+
+
+Esta nueva propiedad la vamos a utilizar en nuestro método UsarSuperPoderes().
+
+
+Este es otro tipo de encapsulamiento, lo que estamos haciendo es reutilizar las clases que ya tienen la clase, las transformamos, creamos una nueva propiedad que encapsula un comportamiento en particular, en este el comportamiento es pegar el nombre con la identidad secreta.
+
+El encapsulamiento se puede utilizar bajo estos escenarios en los que se desea realizar una transformación o manipulación de los valores de las propiedades o queremos crear una nueva propiedad en la que se encapsule un comportamiento en particular.
+
+
+Microsoft Define "Encapsulación" como:
+
+ocultar el estado interno y la funcionalidad de un objeto y permitir solo el acceso a través de un conjunto público de funciones.
+
+Gran ejemplo en la clase con los get; y set;
 
 
 

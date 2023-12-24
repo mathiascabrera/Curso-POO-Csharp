@@ -20,6 +20,15 @@ namespace SuperHeroesApp.Models
                 _Nombre = value.Trim();//El método trim elimina los espacios del principio y del final de la cadena.
             }
         }
+
+        public string NombreIdentidadSecreta
+        {
+            get
+            {
+                return $"{_Nombre} ({IdentidadSecreta})";
+            }
+        }
+
         public string IdentidadSecreta;
         public string Ciudad;
         public List<SuperPoder> SuperPoderes;
@@ -37,7 +46,7 @@ namespace SuperHeroesApp.Models
             StringBuilder sb = new StringBuilder();
             foreach (var item in SuperPoderes)
             {
-                sb.AppendLine($"{Nombre} está usando el super poder {item.Nombre}!!");
+                sb.AppendLine($"{NombreIdentidadSecreta} está usando el super poder {item.Nombre}!!");
             }
             return sb.ToString();
         }
